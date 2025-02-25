@@ -1,0 +1,22 @@
+name: 'Corellium AVH'
+description: 'Automated Atlas device creation.'
+author: 'Corellium, Inc. <support@corellium.com>'
+
+inputs:
+  server:
+    description: 'Specifies which Corellium server to use'
+    required: false
+    default: ''
+  deviceFlavor:
+    description: 'The flavor of the Instance that is being created'
+    required: false
+  deviceOS:
+    description: 'The software version'
+    required: false
+  deviceName:
+    description: 'The name of the device'
+    required: false
+
+runs:
+  using: node20
+  main: dist/index.js
