@@ -76,7 +76,7 @@
     "@types/jest": "^29.5.12",
     "@types/node": "^20.16.2",
     "@types/node-fetch": "^2.6.12",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "7.0.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vercel/ncc": "^0.38.1",
     "cz-conventional-changelog": "^3.3.0",
@@ -103,5 +103,10 @@
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
+  },
+  "overrides": {
+    "@octokit/request-error": "5.1.1",
+    "@octokit/request": "8.4.1",
+    "@actions/github": "6.0.0"
   }
 }
